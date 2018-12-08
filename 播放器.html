@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url(images/cx3.jpeg);
+            /*使得背景图片能够自适应全覆盖*/
+            background-size: cover;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            /*background-color: red;*/
+            position: absolute;
+            bottom: 200px;
+            left:45%;
+            transform-style: preserve-3d;
+            /*transform:  rotateY(0deg);*/
+            animation: sport 8s linear 0s infinite normal;;
+        }
+        @keyframes sport {
+            from{
+                transform: rotateX(-15deg) rotateY(0deg);
+            }
+            to{
+                /*不变的属性写在前面，需要改变的属性写在后面*/
+                transform: rotateX(-15deg) rotateY(-360deg);
+            }
+        }
+        ul li{
+            width: 200px;
+            height: 200px;
+            list-style: none;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            top:0px;
+            left: 0px;
+            font-size: 60px;
+        }
+        ul li:nth-child(1){
+            /*background-color: red;*/
+            transform: rotateY(60deg) translateZ(200px);
+        }
+        ul li:nth-child(2){
+            /*background-color: blue;*/
+            transform: rotateY(120deg) translateZ(200px);
+        }
+        ul li:nth-child(3){
+            /*background-color: greenyellow;*/
+            transform: rotateY(180deg) translateZ(200px);
+        }
+        ul li:nth-child(4){
+            /*background-color: purple;*/
+            transform: rotateY(240deg) translateZ(200px);
+        }
+        ul li:nth-child(5){
+            /*background-color: skyblue;*/
+            transform: rotateY(300deg) translateZ(200px);
+        }
+        ul li:nth-child(6){
+            /*background-color: slateblue;*/
+            transform: rotateY(360deg) translateZ(200px);
+        }
+        ul li img{
+            width: 200px;
+            height: 200px;
+        }
+        ul:hover{
+            animation-play-state: paused;
+        }
+        ul:hover li img{
+            opacity: 0.5;
+        }
+        ul li:hover img{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="images/cx1.jpeg" alt=""></li>
+    <li><img src="images/cx2.jpeg" alt=""></li>
+    <li><img src="images/cx3.jpeg" alt=""></li>
+    <li><img src="images/cx4.jpeg" alt=""></li>
+    <li><img src="images/k1.jpg" alt=""></li>
+    <li><img src="images/cloud1.jpg" alt=""></li>
+</ul>
+<audio src="audio%20sour/jvlunl.mp3" autoplay="autoplay" loop="loop"></audio>
+</body>
+</html>

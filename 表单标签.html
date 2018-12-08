@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+<form action="">
+    <!--明文输入框-->
+    账号：<input type="text">
+    <br>
+    密码：<input type="password">
+    <br>
+    <!--暗文输入框-->
+    账号：<input type="text" value="llj">
+    <br>
+    密码：<input type="password" value="152">
+    <br>
+    <!--单选框
+    注意点：
+    1.默认情况下，单选框步互斥，要想单选框互斥，必须给每一个标签都设置一个name属性，name属性设置相同的值
+    2.要想让单选框默认选中一个选项，那么可以给input标签添加一个checked属性
+    3.如果属性的取值与属性名称一样，可以只写一个，但不推荐。
+    -->
+    性别：
+    <input type="radio" name="gender" checked="checked">男
+    <input type="radio" name="gender">女
+    <input type="radio" name="gender">不详
+    <br>
+    <!--多选框-->
+    爱好:
+    <input type="checkbox" checked>篮球
+    <input type="checkbox">足球
+    <input type="checkbox">族人
+    <br>
+    <!--按钮:定义一个普通按钮,配合js完成一些操作-->
+    <input type="button" value="我是按钮" onclick="alert('llj')">
+    <!--定义一个图片作为按钮-->
+    <br>
+    <input type="image" src="images/k1.jpg" onclick="alert('llj')">
+    <!--重置按钮
+    1.清除表单数据
+    2.可以通过value属性修改默认标题-->
+    <br>
+    <input type="reset" value="修改">
+    <br>
+    <!--提交按钮
+    作用:将表单数据提交到服务器
+    注意点:要想提交到服务器,必须满足两个条件
+    1.告诉表单提交到哪个服务器，可以通过<form action="http://www.baidu.com">告诉表单提交到某个服务器
+    2.告诉表单,表单中的哪些数据需要提交,通过标签属性name="aa",来表明哪个标签与标签值需要提交
+    -->
+    <input type="submit" value="提交">
+    <br>
+    <!--隐藏域
+    作用：用于悄悄收集用户的一些数据，隐藏域是不会出现在界面中的
+    -->
+    <input type="hidden" name="cc" value="it666">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签练习</title>
+</head>
+<body>
+<form action="http://www.baidu.com">
+    <fieldset>
+        <legend>注册界面</legend>
+        <p>
+            账号：<input type="text" name="account">
+        </p>
+        <p>
+            密码：<input type="password" name="password">
+        </p>
+        <p>
+            性别：
+            <input type="radio" name="gentle" value="male">男
+            <input type="radio" name="gentle" value="female">女
+            <input type="radio" name="gentle" value="not known" checked="checked">未知
+        </p>
+        <p>
+            爱好：
+            <input type="checkbox" value="fotball" name="sport">足球
+            <input type="checkbox" value="basketball" name="sport">篮球
+            <input type="checkbox" checked="checked" value="pingpang" name="sport">乒乓球
+        </p>
+        <p>
+            个人简介：<textarea name="" id="" cols="30" rows="10" name="jianjie"></textarea>
+        </p>
+        <p>
+            生日：
+            <input type="date" name="birthday">
+        </p>
+        <p>
+            邮箱：
+            <input type="email" name="email">
+        </p>
+        <p>
+            手机：
+            <input type="number" name="mobile number">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+        <p>
+            <input type="reset">
+        </p>
+    </fieldset>
+</form>
+<!--
+1.这是提交的数据，当某些标签需要提交数据时，需要给标签确定一个name属性。
+2.为了提交的数据具有好的可视性，还需要给标签设置value属性
+https://www.baidu.com/?
+account=55
+&password=152
+&gentle=male
+&sport=fotball
+&sport=pingpang
+&birthday=2018-07-02
+&email=152%40qq.com
+&mobile+number=26156223
+-->
+</body>
+</html>

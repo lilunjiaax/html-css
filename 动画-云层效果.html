@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            height: 400px;
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 50px;
+            animation: light 6s linear 0s infinite alternate;
+            position: relative;
+            overflow: hidden;
+        }
+        @keyframes light {
+            from{
+                background-color: skyblue;
+            }
+            to{
+                background-color: #242424;
+            }
+        }
+        ul li{
+            list-style: none;
+            width: 300%;
+            height: 400px;
+            position: absolute;
+            top:0px;
+            left:0px;
+        }
+        ul li:nth-child(1){
+            background-image: url(images/cloud1.jpg);
+            animation: move1 5s linear 0s infinite alternate;
+        }
+        @keyframes move1 {
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: -100%;
+            }
+        }
+        ul li:nth-child(2){
+            background-image: url(images/cloud3.jpg);
+            animation: move2 5s linear 0s infinite alternate;
+        }
+        @keyframes move2 {
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: -200%;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

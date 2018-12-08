@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            width: 800px;
+            height: 40px;
+            background-color: pink;
+            box-sizing: border-box;
+            margin: 0 auto;
+            margin-top: 100px;
+            list-style:none;
+        }
+        ul li{
+            width: 100px;
+            height: 40px;
+            box-sizing: border-box;
+            background-color: burlywood;
+            float: left;
+            line-height:40px;
+            text-align: center;
+        }
+        a{
+            /*注意设置a标签的宽高要和每个li标签的宽高相同*/
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            text-decoration: none;
+            color: aqua;
+        }
+        a:hover{
+            color: orange;
+            /*鼠标悬停状态的样式*/
+        }
+        a:active{
+            color: purple;
+            /*长按状态的样式*/
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">我是连接</a></li>
+    <li><a href="#">我是连接</a></li>
+    <li><a href="#">我是连接</a></li>
+    <li><a href="#">我是连接</a></li>
+    <li><a href="#">我是连接</a></li>
+    <li><a href="#">我是连接</a></li>
+    <li><a href="#">我是连接</a></li>
+    <li><a href="#">我是连接</a></li>
+</ul>
+</body>
+</html>

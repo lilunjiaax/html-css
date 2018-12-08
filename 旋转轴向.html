@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        div{
+            width: 960px;
+            height: 640px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            perspective: 500px;
+        }
+        div img{
+            transition: transform 1s;
+            transform-origin: 480px 640px;
+        }
+        div:hover img{
+            transform: rotateX(80deg);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="images/422.jpeg" alt="">
+</div>
+</body>
+</html>

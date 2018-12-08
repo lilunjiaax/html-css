@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位流</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style:none;
+            width: 800px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: red;
+        }
+        li{
+            float: left;
+            width: 100px;
+            height: 50px;
+            line-height:50px;
+            text-align: center;
+        }
+        ul li:nth-of-type(4){
+            background-color: blue;
+            position: relative;
+        }
+        img{
+            position: absolute;
+            top:-8px;
+            margin-left: -12px;
+            left:50%;
+        }
+        div{
+            width: 300px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            left:50%;
+            margin-left: -150px;
+            background-attachment:fixed;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>服饰城</li>
+    <li>没壮观</li>
+    <li>京东超市</li>
+    <li>
+        全球购
+        <img src="images/k1.jpg" alt="" width="24px" height="19px">
+    </li>
+    <li>山沟</li>
+    <li>团购</li>
+    <li>拍卖</li>
+    <li>金融</li>
+</ul>
+<hr>
+<hr>
+<div></div>
+</body>
+</html>

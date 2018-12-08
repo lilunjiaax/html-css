@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            perspective: 500px;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            /*border: 1px solid #000;*/
+            transform-style: preserve-3d;
+            position: relative;
+            margin: 100px auto;
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            /*transition: transform 4s linear;*/
+            animation: sport 6s linear 0s infinite normal;
+        }
+        @keyframes sport {
+            from{
+                transform: rotateX(0deg);
+            }
+            to{
+                transform: rotateX(360deg);
+            }
+        }
+        ul li{
+            text-align: center;
+            line-height: 200px;
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            font-size: 60px;
+        }
+        ul li:nth-child(1){
+            transform: rotateX(90deg) translateZ(100px) scale(2,1);
+        }
+        ul li:nth-child(2){
+            transform: rotateX(180deg) translateZ(100px) scale(2,1);
+        }
+        ul li:nth-child(3){
+            transform: rotateX(270deg) translateZ(100px) scale(2,1);
+        }
+        ul li:nth-child(4){
+            transform: rotateX(360deg) translateZ(100px) scale(2,1);
+        }
+        ul li:nth-child(5){
+
+        }
+        ul li:nth-child(6){
+
+        }
+        /*ul:hover{*/
+            /*transform: rotateX(45deg) rotateY(70deg);*/
+        /*}*/
+        ul li img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="images/cx1.jpeg" alt=""></li>
+    <li><img src="images/cx2.jpeg" alt=""></li>
+    <li><img src="images/cx3.jpeg" alt=""></li>
+    <li><img src="images/cx4.jpeg" alt=""></li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+</body>
+</html>
